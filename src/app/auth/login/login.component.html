@@ -1,0 +1,16 @@
+<div class="body"></div>
+		<div class="grad"></div>
+		<div class="header">
+			<div>Bienvenido<span>:</span></div>
+		</div>
+		<br>
+		<div class="login">
+            <form  [formGroup]="Formlogin">
+				<input type="text" placeholder="Correo" name="user" formControlName="usuario"><br>
+				<input type="password" placeholder="Contraseña" name="password" formControlName="pass"><br>
+				<input type="button" value="Iniciar Sesion" (click)="Login()">
+            </form>
+                <div class="alingButtons">
+                    <button type="button" class="btn btn-outline-success" (click)="Register()">Registrarse</button>
+                </div>
+		</div>

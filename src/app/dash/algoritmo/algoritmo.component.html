@@ -1,0 +1,75 @@
+<div class="container-fluid fondo" >
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand"> </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page"  [routerLink]="[ '/dash/news']" routerLinkActive="active">Noticias  Actuales /</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page"  [routerLink]="[ '/dash/exe2']"  routerLinkActive="active">Ejercicio 2 </a>
+              </li>
+            </ul>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="float-right">
+           
+            <button class="btn btn-outline-success"  (click)="LogOut()">Salir</button>
+          </div>
+        </div>
+      </nav>
+          <div class="row">
+              <div class="col.12">
+                <h1 class="center orange">Ejercicio 2</h1>
+                <hr>
+              </div>
+          </div>
+          <br>
+          <br>
+          <div class="row">
+              <h3 class="orange">Problema:</h3>
+              <p>
+                A continuación definiremos un polígono n interesante. Tu tarea es encontrar el área de un polígono para un n dado.
+                Un polígono de interés 1 es simplemente un cuadrado con un lado de longitud 1. Un polígono de interés n se obtiene 
+                tomando el polígono de interés n - 1 y agregando polígonos de interés 1 a su borde, uno al lado del otro. Puede ver los
+                 polígonos interesantes de 1, 2, 3 y 4 en la imagen de abajo.
+              </p>
+              <br>
+              <p>
+                For n = 2, the output should be
+                shapeArea(n) = 5;
+                For n = 3, the output should be
+                shapeArea(n) = 13.
+                Input/Output
+                
+                [execution time limit] 4 seconds (js)
+                [input] integer n
+                Guaranteed constraints:
+                1 ≤ n < 104.
+                [output] integer
+                The area of the n-interesting polygon.	
+                
+              </p>
+              <h3 class="green">Respuesta:</h3>
+              <div class="row">
+                  <div class="col-3">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Area n =</span>
+                        <input type="text" class="form-control" placeholder="4" aria-label="Username" aria-describedby="basic-addon1" disabled>
+                      </div>
+                  </div>
+                  <div class="col-9">
+                      <p>El resultado es : {{resultado}}</p>
+                  </div>
+              </div>
+              <div class="row">
+                  <p>La  formula  para  encontrar los  lados del poligono es  :  2*n*(n-1) +1</p>
+                  <p>Donde n es el numero de lados del poligono, apliacando esta formula, encontramos los lados de la figura</p>
+              </div>
+          </div>
+
+         
+      </div>
